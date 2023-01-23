@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>재욱 그리고 솔지</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+</head>
+<body>
+    <div class="wedding">
+        <div class="title">
+            <img src="./img/wedding.png" />
+        </div>
+        <div class="date">2023. 2. 19</div>
+    </div>
+
+    <div class="image__top">
+        <div>
+            <img src="./img/image_top.jpg">
+        </div>
+        <div class="txt_label">
+            <span class="txt">재욱 그리고 솔지</span>
+        </div>
+    </div>
+
+    <div class="greeting">
+        <p>
+            평생을 함께 하고 싶은 사람을 만났습니다.<br/>
+            이제 저희 두사람 사랑으로 하나되어<br/>
+            서로 아껴주고, 이해하고, 사랑하며,<br/>
+            지금처럼 서로 존중하며 살아가겠습니다.
+        </p>
+        <p style="font-size: 1.5em">
+            결혼합니다.
+        </p>
+        <p>
+            늘 저희를 아껴주셨던 감사한 분들을 모시고<br/>
+            함께 기쁨을 나누는 것이 도리이지만,
+        </p>
+        <p>
+            저희 두사람 뜻에 따라<br/>
+            양가 부모님과 가족들만 모시고<br/>
+            간소하게 서약을 맺고자 합니다.
+        </p>
+        <p>
+            많은 분들을 초대하지 못한 점 깊은 양해를 구하며,<br/>
+            멀리서나마 저희 두사람 축복하고 격려해주시면<br/>
+            더 없는 기쁨으로 간직하겠습니다.
+        </p>
+    </div>
+
+    <div class="calendar">
+        <img src="./img/calendar.jpg" >
+    </div>
+
+    <div class="gallery">
+        <div class="title">Gallery</div>
+        <div class="swiper" style="width: 100%; height: 500px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div><img src="./img/image_01.jpg"></div></div>
+                <div class="swiper-slide"><div><img src="./img/image_02.jpg"></div></div>
+                <div class="swiper-slide"><div><img src="./img/image_03.jpg"></div></div>
+                <div class="swiper-slide"><div><img src="./img/image_04.jpg"></div></div>
+                <div class="swiper-slide"><div><img src="./img/image_05.jpg"></div></div>
+                <div class="swiper-slide"><div><img src="./img/image_06.jpg"></div></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="image__bottom">
+        <p>
+            <img src="./img/flower_sketch.png">
+        </p>
+        <p>“예쁘게 잘 살겠습니다”</p>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+<script>
+    window.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            effect: "coverflow",
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+
+    });
+
+    (function () {
+
+    })()
+</script>
+
+</html>
